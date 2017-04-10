@@ -14,9 +14,21 @@
 	<div class="container">
 		<div class="container-edit">
 			<input type="text" id="title" placeholder="无标题文章" />
-			<ul class="toolbar">
-				<li class="uploadImage">
+			<ul class="toolbar" id="toolbar">
+				<li class="uploadImage" id='uploadImage'>
 					<i class="fa fa-picture-o"></i>
+				</li>
+				<li class="text_Header">
+					<i class="fa fa-header"></i>
+				</li>
+				<li class="text_clear">
+					<i class="fa fa-repeat"></i>
+				</li>
+				<li class="text_code">
+					<i class="fa fa-code"></i>
+				</li>
+				<li class="text_test">
+					sss
 				</li>
 			</ul>
 			<textarea spellcheck="false" id="content" width="200"></textarea>
@@ -25,6 +37,7 @@
 			<h1 class="markdown-title"></h1>
 			<article class="markdown-body"></article>
 		</div>
+
 	</div>
 	<div class="test" id="test" draggable="true"></div>
 	<!-- <div class="container">
@@ -102,6 +115,9 @@
 	</div> -->
 	<script type="text/javascript" src="vender/jquery.min.js"></script>
 	<script type="text/javascript" src="vender/markdown-it.min.js"></script>
+	<script type="text/javascript" src="vender/plupload/moxie.js"></script>
+	<script type="text/javascript" src="vender/plupload/plupload.dev.js"></script>
+	<script type="text/javascript" src="vender/qiniu/qiniu.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
