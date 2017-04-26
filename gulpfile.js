@@ -94,3 +94,8 @@ gulp.task('serve', ['copy-html', 'copy-vender', 'sass-css', 'concat-js'], functi
     gulp.watch(`${conifg.src}/js/**/*.js`, ['concat-js']);
     // gulp.watch(['*.html', 'js/**/*.js'], {cwd: conifg.src}, browserSync.reload);
 });
+
+
+gulp.task('build',['copy-html','copy-vender', 'sass-css', 'concat-js']);
+
+
